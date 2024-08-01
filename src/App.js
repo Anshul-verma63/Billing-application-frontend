@@ -11,6 +11,7 @@ import {
 import AllBills from "./component/AllBills";
 import ShowBill from "./component/ShowBill";
 import Search from "./component/Search";
+import NotFound from "./component/NotFound";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/show-bill/:bid" element={<Privateroutes />}>
           <Route path="" element={<ShowBill />} />
         </Route>
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
