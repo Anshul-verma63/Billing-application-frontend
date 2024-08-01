@@ -76,7 +76,7 @@ const LoginPage = () => {
     <Container>
       <LoginForm>
         {/* <Logo>A</Logo> */}
-        <Title>Welcome</Title>
+        <Title>Welcome Admin</Title>
         <Input
           onChange={(e) => setEmail(e.target.value)}
           type="email"
