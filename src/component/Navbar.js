@@ -5,13 +5,14 @@ import Modal from "./AddCustomer";
 import AddProduct from "./AddProduct";
 import { useSelector } from "react-redux";
 import axios from "axios";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });
+  const navigate = useNavigate();
 
   // save bill
   const Products = useSelector((state) => state.product.product);
@@ -47,6 +48,7 @@ function Navbar() {
 
   //handle reset
   const resetPage = () => {
+    navigate("/");
     window.location.reload();
   };
   return (
