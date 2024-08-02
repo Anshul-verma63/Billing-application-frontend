@@ -73,13 +73,13 @@ const Modal = () => {
                 <div className="customer-detail">
                   <div className="input-item">
                     <label style={{ fontWeight: "bold" }} htmlFor="phone">
-                      Cus Phone No.
+                      GST NO.
                     </label>
                     <br />
                     <input
                       id="phone"
                       type="phone"
-                      placeholder="Enter No."
+                      placeholder="Enter GST No"
                       onChange={(e) => setCusPhone(e.target.value)}
                     />
                   </div>
