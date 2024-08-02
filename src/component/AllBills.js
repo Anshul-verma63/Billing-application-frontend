@@ -66,8 +66,8 @@ const AllBills = () => {
                         <tr>
                           <th scope="col">Bill No</th>
                           <th scope="col">Name</th>
-                          <th scope="col">Phone</th>
                           <th scope="col">Address</th>
+                          <th scope="col">GST No</th>
                           <th scope="col">Actions</th>
                         </tr>
                       </thead>

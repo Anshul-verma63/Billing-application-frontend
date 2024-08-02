@@ -7,6 +7,7 @@ const Dashboard = () => {
   const [totalBills, setTotalBills] = useState();
 
   let totalPrice = 0;
+  let tPrice = 0;
   totalBills?.map((bill) => {
     const prod = bill?.products;
     totalPrice += prod.reduce(
@@ -18,6 +19,8 @@ const Dashboard = () => {
     let igst = bill?.igst || "0";
     let totalGST = Number(cgst) + Number(sgst) + Number(igst);
     totalPrice += (totalPrice * totalGST) / 100;
+    tPrice += totalPrice;
+    totalPrice = 0;
   });
 
   const navigate = useNavigate();
@@ -92,7 +95,7 @@ const Dashboard = () => {
                 style={{ width: "12rem", height: "100px", margin: "20px" }}
               >
                 <div className="card-body">
-                  <h5 className="card-title ">Total Amount : {totalPrice}</h5>
+                  <h5 className="card-title ">Total Amount : {tPrice}</h5>
                   {/* <h5 className="card-text">{totalBill}</h5> */}
                 </div>
               </div>
