@@ -80,7 +80,7 @@ const BillPage = ({ prod }) => {
             <span style={{ color: "gray" }}>{prod?.address}</span>
           </p>
           <p style={{ fontWeight: "bold" }}>
-            Phone:
+            GST No:
             <span style={{ color: "gray" }}>{prod?.phone}</span>
           </p>
           <p style={{ fontWeight: "bold" }}>
@@ -111,7 +111,7 @@ const BillPage = ({ prod }) => {
             <span style={{ color: "gray" }}>{prod?.address}</span>
           </p>
           <p style={{ fontWeight: "bold" }}>
-            Phone:
+            GST No:
             <span style={{ color: "gray" }}>{prod?.phone}</span>
           </p>
           <p style={{ fontWeight: "bold" }}>

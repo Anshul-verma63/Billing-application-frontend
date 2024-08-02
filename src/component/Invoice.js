@@ -82,7 +82,7 @@ const Invoice = () => {
             <span style={{ color: "gray" }}>{CustomerDetail?.address}</span>
           </p>
           <p style={{ fontWeight: "bold" }}>
-            Phone:
+            GST No:
             <span style={{ color: "gray" }}>{CustomerDetail?.phone}</span>
           </p>
           <p style={{ fontWeight: "bold" }}>
@@ -116,7 +116,7 @@ const Invoice = () => {
           </p>
 
           <p style={{ fontWeight: "bold" }}>
-            Phone:
+            GST No:
             <span style={{ color: "gray" }}>{CustomerDetail?.phone}</span>
           </p>
           <p style={{ fontWeight: "bold" }}>
