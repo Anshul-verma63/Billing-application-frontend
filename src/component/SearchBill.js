@@ -37,7 +37,7 @@ const SearchBill = () => {
       </Link>
 
       <div className="search-container">
-        <h1>Search Bill By Number</h1>
+        <h1>Search Bill GST No</h1>
         {products?.length > 0 && (
           <>
             <h5>{products?.length} record found</h5>
@@ -49,7 +49,7 @@ const SearchBill = () => {
         <div className="search-box">
           <input
             type="text"
-            placeholder="Enter mobile number"
+            placeholder="Enter GST number"
             onChange={(e) => setNumber(e.target.value)}
           />
           <button className="search-btn" onClick={handleSearch}>

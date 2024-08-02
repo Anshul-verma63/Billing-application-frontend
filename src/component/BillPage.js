@@ -41,7 +41,7 @@ const BillPage = ({ prod }) => {
     <div className="invoice-container">
       <header className="invoice-header">
         <p>
-          <strong>GSTIN:</strong> 09BRS0PT9478H1ZI
+          <strong>GSTIN:</strong> 09BRSPT9478H1ZI
         </p>
         <h1>BHARAT AVIONICS</h1>
         <p>Sidhiyawan, Jagdishpur - Amethi (U.P.)</p>
@@ -83,6 +83,10 @@ const BillPage = ({ prod }) => {
             Phone:
             <span style={{ color: "gray" }}>{prod?.phone}</span>
           </p>
+          <p style={{ fontWeight: "bold" }}>
+            State Code:
+            <span style={{ color: "gray" }}>{prod?.stateCode}</span>
+          </p>
           {/* <p>GSTIN/UIN: </p>
           <p>State: </p> */}
         </div>
@@ -91,7 +95,7 @@ const BillPage = ({ prod }) => {
             <strong>State:</strong> Uttar Pradesh
           </p>
           <p>
-            <strong>State Code:</strong> {prod?.stateCode}
+            <strong>State Code:</strong> 09
           </p>
           <hr />
           <p>
@@ -109,6 +113,10 @@ const BillPage = ({ prod }) => {
           <p style={{ fontWeight: "bold" }}>
             Phone:
             <span style={{ color: "gray" }}>{prod?.phone}</span>
+          </p>
+          <p style={{ fontWeight: "bold" }}>
+            State Code:
+            <span style={{ color: "gray" }}>{prod?.stateCode}</span>
           </p>
           {/* <p>GSTIN/UIN: </p>
           <p>State: </p> */}

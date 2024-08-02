@@ -87,15 +87,19 @@ const Invoice = () => {
             Phone:
             <span style={{ color: "gray" }}>{CustomerDetail?.phone}</span>
           </p>
+          <p style={{ fontWeight: "bold" }}>
+            State Code:
+            <span style={{ color: "gray" }}>{CustomerDetail?.stateCode}</span>
+          </p>
           {/* <p>GSTIN/UIN: </p>
-          <p>State: </p> */}
+           */}
         </div>
         <div className="info-right">
           <p>
             <strong>State:</strong> Uttar Pradesh
           </p>
           <p>
-            <strong>State Code:</strong> {CustomerDetail?.stateCode}
+            <strong>State Code:</strong> 09
           </p>
           <hr />
           <p>
@@ -116,6 +120,10 @@ const Invoice = () => {
           <p style={{ fontWeight: "bold" }}>
             Phone:
             <span style={{ color: "gray" }}>{CustomerDetail?.phone}</span>
+          </p>
+          <p style={{ fontWeight: "bold" }}>
+            State Code:
+            <span style={{ color: "gray" }}>{CustomerDetail?.stateCode}</span>
           </p>
           {/* <p>GSTIN/UIN: </p>
           <p>State: </p> */}

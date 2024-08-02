@@ -3,7 +3,7 @@
 .invoice-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0px 5px;
   border: 1px solid #000;
   font-family: Arial, sans-serif;
 }
@@ -11,7 +11,7 @@
 .invoice-header {
   text-align: center;
   border-bottom: 1px solid #000;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .invoice-header h1 {
@@ -22,7 +22,7 @@
 .invoice-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .invoice-info div {
@@ -32,13 +32,13 @@
 .invoice-table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .invoice-table th,
 .invoice-table td {
   border: 1px solid #000;
-  padding: 8px;
+  padding: 0px 5px;
   text-align: left;
 }
 
@@ -46,8 +46,8 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #000;
-  padding-top: 10px;
-  margin-top: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
   width: 100%;
 }
 .footer-left {
@@ -57,8 +57,8 @@
 .invoice-terms {
   text-align: center;
   border-top: 1px solid #000;
-  padding-top: 20px;
-  margin-top: 20px;
+  padding-top: 5px;
+  margin-top: 5px;
   display: flex;
   align-content: end;
   justify-content: space-between;
