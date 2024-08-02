@@ -13,6 +13,11 @@ const Dashboard = () => {
       (total, item) => total + item.qty * item.price,
       0
     );
+    let cgst = bill?.cgst || "0";
+    let sgst = bill?.sgst || "0";
+    let igst = bill?.igst || "0";
+    let totalGST = Number(cgst) + Number(sgst) + Number(igst);
+    totalPrice += (totalPrice * totalGST) / 100;
   });
 
   const navigate = useNavigate();

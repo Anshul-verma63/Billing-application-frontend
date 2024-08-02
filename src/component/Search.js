@@ -71,7 +71,7 @@ const Search = () => {
             </div>
             <div className="search-con">
               <h3 style={{ textAlign: "center", marginTop: "10px" }}>
-                Search Bill By Number
+                Search Bill By GST No
               </h3>
               {products?.length > 0 && (
                 <div
@@ -96,7 +96,7 @@ const Search = () => {
                     fontSize: "15px",
                   }}
                   type="text"
-                  placeholder="Enter mobile number"
+                  placeholder="Enter GST number"
                   onChange={(e) => setNumber(e.target.value)}
                 />
                 <button className="search-btn" onClick={handleSearch}>

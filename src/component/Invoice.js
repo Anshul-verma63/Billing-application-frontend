@@ -15,9 +15,7 @@ const Invoice = () => {
   let cgst = CustomerDetail?.cgst || "0";
   let sgst = CustomerDetail?.sgst || "0";
   let igst = CustomerDetail?.igst || "0";
-  console.log(cgst);
-  console.log(sgst);
-  console.log(igst);
+
   // let totalGST = 18;
   let totalGST = Number(cgst) + Number(sgst) + Number(igst);
   let gstAmount = (totalPrice * totalGST) / 100;
